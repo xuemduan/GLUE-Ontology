@@ -30,3 +30,9 @@ The ontology is published using GitHub pages. Content negotiation configuration 
 Ioannis Dasoulas: ioannis.dasoulas@kuleuven.be
 
 Anastasia Dimou: anastasia.dimou@kuleuven.be
+
+<br>
+
+# Acknowledgements
+
+This work is supported by FAIR: the Flemish Government under the “Onderzoeksprogramma Artificiële Intelligentie (AI) Vlaanderen” program. 
