@@ -1,0 +1,1068 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://w3id.org/glue/shapes/AdhesionApplication> a sh:NodeShape ;
+    rdfs:label "Adhesion Application" ;
+    sh:description "A task that an addhesive is typically used in." ;
+    sh:name "Adhesion Application" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <http://w3id.org/glue/shapes/industry> ;
+    sh:targetClass <http://w3id.org/glue/AdhesionApplication> .
+
+<http://w3id.org/glue/shapes/AdhesionQuality> a sh:NodeShape ;
+    rdfs:label "Adhesion Quality" ;
+    sh:description "A quality estimation of an adhesive type" ;
+    sh:name "Adhesion Quality" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <http://w3id.org/glue/shapes/adhesionQualityEstimation>,
+        <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+    sh:targetClass <http://w3id.org/glue/AdhesionQuality> .
+
+<http://w3id.org/glue/shapes/Adhesive> a sh:NodeShape ;
+    rdfs:label "Adhesive" ;
+    sh:description "A non-metallic substance applied to one or both surface of two separate items that binds them together and resists their separation" ;
+    sh:name "Adhesive" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <http://w3id.org/glue/shapes/adhesiveCost>,
+        <http://w3id.org/glue/shapes/adhesiveFamily>,
+        <http://w3id.org/glue/shapes/adhesiveMaxElongation>,
+        <http://w3id.org/glue/shapes/complexModulus>,
+        <http://w3id.org/glue/shapes/eModulus>,
+        <http://w3id.org/glue/shapes/idealApplicationThickness>,
+        <http://w3id.org/glue/shapes/maxApplicationTemperature>,
+        <http://w3id.org/glue/shapes/maxApplicationThickness>,
+        <http://w3id.org/glue/shapes/maxGravityHardener>,
+        <http://w3id.org/glue/shapes/maxGravityResin>,
+        <http://w3id.org/glue/shapes/maxMixedViscosity>,
+        <http://w3id.org/glue/shapes/maxOpenTime>,
+        <http://w3id.org/glue/shapes/maxPolymerTransitionTemperature>,
+        <http://w3id.org/glue/shapes/maxPotLife>,
+        <http://w3id.org/glue/shapes/maxResistanceTemperature>,
+        <http://w3id.org/glue/shapes/maxStorageTemperature>,
+        <http://w3id.org/glue/shapes/maxViscosityHardener>,
+        <http://w3id.org/glue/shapes/maxViscosityResin>,
+        <http://w3id.org/glue/shapes/minApplicationTemperature>,
+        <http://w3id.org/glue/shapes/minApplicationThickness>,
+        <http://w3id.org/glue/shapes/minGravityHardener>,
+        <http://w3id.org/glue/shapes/minGravityResin>,
+        <http://w3id.org/glue/shapes/minMixedViscosity>,
+        <http://w3id.org/glue/shapes/minPolymerTransitionTemperature>,
+        <http://w3id.org/glue/shapes/minPotLife>,
+        <http://w3id.org/glue/shapes/minResistanceTemperature>,
+        <http://w3id.org/glue/shapes/minStorageTemperature>,
+        <http://w3id.org/glue/shapes/minViscosityHardener>,
+        <http://w3id.org/glue/shapes/minViscosityResin>,
+        <http://w3id.org/glue/shapes/peelResistance>,
+        <http://w3id.org/glue/shapes/resinHardenerRatio>,
+        <http://w3id.org/glue/shapes/resistantToSolvent>,
+        <http://w3id.org/glue/shapes/shelfLife>,
+        <http://w3id.org/glue/shapes/thermalConductivity>,
+        <http://w3id.org/glue/shapes/viscosityTemperatureValidity>,
+        <http://w3id.org/glue/shapes/youngModulus> ;
+    sh:targetClass <http://w3id.org/glue/Adhesive> .
+
+<http://w3id.org/glue/shapes/AdhesiveFamily> a sh:NodeShape ;
+    rdfs:label "Adhesive Family" ;
+    sh:description "A family of common adhesives, categorized by method of adhesion." ;
+    sh:name "Adhesive Family" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <http://w3id.org/glue/shapes/adhesionApplication>,
+        <http://w3id.org/glue/shapes/adhesionQuality>,
+        <http://w3id.org/glue/shapes/adhesiveMaxElongation>,
+        <http://w3id.org/glue/shapes/chemicalDetachability>,
+        <http://w3id.org/glue/shapes/curingTimeEstimation>,
+        <http://w3id.org/glue/shapes/environmentalResistance>,
+        <http://w3id.org/glue/shapes/maxApplicationRelativeHumidity>,
+        <http://w3id.org/glue/shapes/maxApplicationTemperature>,
+        <http://w3id.org/glue/shapes/maxCuringTemperature>,
+        <http://w3id.org/glue/shapes/maxDetachmentTemperature>,
+        <http://w3id.org/glue/shapes/maxGapFillingCapability>,
+        <http://w3id.org/glue/shapes/maxOperationalTemperature>,
+        <http://w3id.org/glue/shapes/maxShearStrength>,
+        <http://w3id.org/glue/shapes/mechanicalDetachability>,
+        <http://w3id.org/glue/shapes/minApplicationRelativeHumidity>,
+        <http://w3id.org/glue/shapes/minApplicationTemperature>,
+        <http://w3id.org/glue/shapes/minCuringTemperature>,
+        <http://w3id.org/glue/shapes/minDetachmentTemperature>,
+        <http://w3id.org/glue/shapes/minGapFillingCapability>,
+        <http://w3id.org/glue/shapes/minOperationalTemperature>,
+        <http://w3id.org/glue/shapes/minShearStrength>,
+        <http://w3id.org/glue/shapes/polymerType>,
+        <http://w3id.org/glue/shapes/sealingQuality>,
+        <http://w3id.org/glue/shapes/shearStrengthDegree>,
+        <http://w3id.org/glue/shapes/vibrationsDamping> ;
+    sh:targetClass <http://w3id.org/glue/AdhesiveFamily> .
+
+<http://w3id.org/glue/shapes/Brand> a sh:NodeShape ;
+    rdfs:label "Brand" ;
+    sh:name "Brand" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://schema.org/Brand> .
+
+<http://w3id.org/glue/shapes/Industry> a sh:NodeShape ;
+    rdfs:label "Industry" ;
+    sh:description "A generally categorized brand of economic activity" ;
+    sh:name "Industry" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://w3id.org/glue/Industry> .
+
+<http://w3id.org/glue/shapes/MaterialFamily> a sh:NodeShape ;
+    rdfs:label "Material Family" ;
+    sh:description "A category of materials that a substrate belongs in" ;
+    sh:name "Material Family" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://w3id.org/glue/MaterialFamily> .
+
+<http://w3id.org/glue/shapes/PMD_0000000> a sh:NodeShape ;
+    rdfs:label "Material" ;
+    sh:name "Material" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <https://w3id.org/pmd/co/PMD_0000000> .
+
+<http://w3id.org/glue/shapes/Product> a sh:NodeShape ;
+    rdfs:label "Product" ;
+    sh:name "Product" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://schema.org/Product> .
+
+<http://w3id.org/glue/shapes/Solvent> a sh:NodeShape ;
+    rdfs:label "Solvent" ;
+    sh:description "A substance that dissolves a solute, resulting in a solution" ;
+    sh:name "Solvent" ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://w3id.org/glue/Solvent> .
+
+<http://w3id.org/glue/shapes/Substrate> a sh:NodeShape ;
+    rdfs:label "Substrate" ;
+    sh:description "A material surface" ;
+    sh:name "Substrate" ;
+    sh:nodeKind sh:IRI ;
+    sh:property <http://w3id.org/glue/shapes/baseMaterial>,
+        <http://w3id.org/glue/shapes/environmentalResistance>,
+        <http://w3id.org/glue/shapes/fatigueStrengthLowerBound>,
+        <http://w3id.org/glue/shapes/fatigueStrengthUpperBound>,
+        <http://w3id.org/glue/shapes/isMagnetic>,
+        <http://w3id.org/glue/shapes/materialFamily>,
+        <http://w3id.org/glue/shapes/maxDissipationFactor>,
+        <http://w3id.org/glue/shapes/maxElectricalConductivity>,
+        <http://w3id.org/glue/shapes/maxGlassTemperature>,
+        <http://w3id.org/glue/shapes/maxMeltingTemperature>,
+        <http://w3id.org/glue/shapes/maxServiceTemperature>,
+        <http://w3id.org/glue/shapes/maxSpecificHeatCapacity>,
+        <http://w3id.org/glue/shapes/maxSubstrateCost>,
+        <http://w3id.org/glue/shapes/maxThermalExpansionCoefficient>,
+        <http://w3id.org/glue/shapes/maxToughness>,
+        <http://w3id.org/glue/shapes/maxWaterAbsorption>,
+        <http://w3id.org/glue/shapes/maxWaterVaporTransmission>,
+        <http://w3id.org/glue/shapes/minDissipationFactor>,
+        <http://w3id.org/glue/shapes/minElectricalConductivity>,
+        <http://w3id.org/glue/shapes/minGlassTemperature>,
+        <http://w3id.org/glue/shapes/minMeltingTemperature>,
+        <http://w3id.org/glue/shapes/minServiceTemperature>,
+        <http://w3id.org/glue/shapes/minSpecificHeatCapacity>,
+        <http://w3id.org/glue/shapes/minSubstrateCost>,
+        <http://w3id.org/glue/shapes/minThermalExpansionCoefficient>,
+        <http://w3id.org/glue/shapes/minToughness>,
+        <http://w3id.org/glue/shapes/minWaterAbsorption>,
+        <http://w3id.org/glue/shapes/minWaterVaporTransmission>,
+        <http://w3id.org/glue/shapes/substrateMaxElongation>,
+        <http://w3id.org/glue/shapes/substrateMaxYoungModulus>,
+        <http://w3id.org/glue/shapes/substrateMinElongation>,
+        <http://w3id.org/glue/shapes/substrateMinYoungModulus>,
+        <http://w3id.org/glue/shapes/substrateTensileStrengthLowerBound>,
+        <http://w3id.org/glue/shapes/substrateTensileStrengthUpperBound>,
+        <http://w3id.org/glue/shapes/thermalConductivity>,
+        <http://w3id.org/glue/shapes/transparency> ;
+    sh:targetClass <http://w3id.org/glue/Substrate> .
+
+<http://w3id.org/glue/shapes/brand> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://schema.org/brand> .
+
+<http://w3id.org/glue/shapes/ceramicAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with ceramics." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with ceramics." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/ceramicAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/chemicalResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to withstand chemicals" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to withstand chemicals" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/chemicalResistance> .
+
+<http://w3id.org/glue/shapes/color> a sh:PropertyShape ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://schema.org/color> .
+
+<http://w3id.org/glue/shapes/compositeAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with composites." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with composites." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/compositeAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/creepResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to withstand creep" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to withstand creep" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/creepResistance> .
+
+<http://w3id.org/glue/shapes/ferroMetalAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with ferrous metals." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with ferrous metals." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/ferroMetalAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/freshWaterResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to withstand fresh water" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to withstand fresh water" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/freshWaterResistance> .
+
+<http://w3id.org/glue/shapes/glassAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with glass." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with glass." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/glassAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/humidityResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to withstand humidity" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to withstand humidity" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/humidityResistance> .
+
+<http://w3id.org/glue/shapes/maxThermalConductivity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive or a substrate and a minimum estimation of its ability to conduct heat (in W/m.°C)" ;
+    sh:description "A relation between an adhesive or a substrate and a minimum estimation of its ability to conduct heat (in W/m.°C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxThermalConductivity> .
+
+<http://w3id.org/glue/shapes/minThermalConductivity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive or a substrate and a maximum estimation of its ability to conduct heat (in W/m.°C)" ;
+    sh:description "A relation between an adhesive or a substrate and a maximum estimation of its ability to conduct heat (in W/m.°C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minThermalConductivity> .
+
+<http://w3id.org/glue/shapes/name> a sh:PropertyShape ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://schema.org/name> .
+
+<http://w3id.org/glue/shapes/nonFerroMetalAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with non-ferrous metals." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with non-ferrous metals." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/nonFerroMetalAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/organicSolventResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or a substrate and its relative ability to withstand organic solvents" ;
+    sh:description "A relation between an adhesive type or a substrate and its relative ability to withstand organic solvents" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/organicSolventResistance> .
+
+<http://w3id.org/glue/shapes/rubberAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with rubbers." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with rubbers." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/rubberAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/saltWaterResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to withstand salt water" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to withstand salt water" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/saltWaterResistance> .
+
+<http://w3id.org/glue/shapes/shockResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to withstand shock" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to withstand shock" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/shockResistance> .
+
+<http://w3id.org/glue/shapes/steelAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with steel." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with steel." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/steelAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/strongAlkalisResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to withstand strong alkalis" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to withstand strong alkalis" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/strongAlkalisResistance> .
+
+<http://w3id.org/glue/shapes/thermoplasticAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with thermoplastic." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with thermoplastic." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/thermoplasticAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/thermosetAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with thermoset." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with thermoset." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/thermosetAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/uvResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or a substrate and its relative ability to withstand uv radiation" ;
+    sh:description "A relation between an adhesive type or a substrate and its relative ability to withstand uv radiation" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/uvResistance> .
+
+<http://w3id.org/glue/shapes/waterResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or substrate and its relative ability to resist water" ;
+    sh:description "A relation between an adhesive type or substrate and its relative ability to resist water" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/waterResistance> .
+
+<http://w3id.org/glue/shapes/woodAdhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with wood." ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with wood." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/woodAdhesionQuality> .
+
+<http://w3id.org/glue/shapes/adhesionApplication> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and a type of application it is commonly used in" ;
+    sh:class <http://w3id.org/glue/AdhesionApplication> ;
+    sh:description "A relation between an adhesive family and a type of application it is commonly used in" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/adhesionApplication> .
+
+<http://w3id.org/glue/shapes/adhesionQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the quality of adhesion it achieves with a material family." ;
+    sh:class <http://w3id.org/glue/AdhesionQuality> ;
+    sh:description "A relation between an adhesive type and the quality of adhesion it achieves with a material family." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/adhesionQuality> .
+
+<http://w3id.org/glue/shapes/adhesionQualityEstimation> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesion quality estimation entity and the relative value of the estimation" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesion quality estimation entity and the relative value of the estimation" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/adhesionQualityEstimation> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesion quality estimation for an adhesive type and the material family the estimation corresponds to." ;
+    sh:class <http://w3id.org/glue/MaterialFamily> ;
+    sh:description "A relation between an adhesion quality estimation for an adhesive type and the material family the estimation corresponds to." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/adhesionQualityMaterialFamily> .
+
+<http://w3id.org/glue/shapes/adhesiveCost> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the estimation of its cost (in Euros) per mililiter (ml) based on amount paid for small scale tubes." ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the estimation of its cost (in Euros) per mililiter (ml) based on amount paid for small scale tubes." ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/adhesiveCost> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/adhesiveFamily> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the adhesive family it belongs to." ;
+    sh:class <http://w3id.org/glue/AdhesiveFamily> ;
+    sh:description "A relation between an adhesive and the adhesive family it belongs to." ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/adhesiveFamily> .
+
+<http://w3id.org/glue/shapes/baseMaterial> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the base material it consists of" ;
+    sh:class <https://w3id.org/pmd/co/PMD_0000000> ;
+    sh:description "A relation between a substrate and the base material it consists of" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/baseMaterial> .
+
+<http://w3id.org/glue/shapes/chemicalDetachability> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and its relative ability to be detached chemically" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive family and its relative ability to be detached chemically" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/chemicalDetachability> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/complexModulus> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its resistance to deformation of the sample (in MPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its resistance to deformation of the sample (in MPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/complexModulus> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/curingTimeEstimation> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and an estimation of time it requires to cure/harden" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive family and an estimation of time it requires to cure/harden" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/curingTimeEstimation> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/eModulus> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its material's elasticity (in MPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its material's elasticity (in MPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/eModulus> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/fatigueStrengthLowerBound> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the lower bound of the highest stress that it can withstand for 10^7 cycles without breaking (in MPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the lower bound of the highest stress that it can withstand for 10^7 cycles without breaking (in MPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/fatigueStrengthLowerBound> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/fatigueStrengthUpperBound> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the upper bound of the highest stress that it can withstand for 10^7 cycles without breaking (in MPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the upper bound of the highest stress that it can withstand for 10^7 cycles without breaking (in MPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/fatigueStrengthUpperBound> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/idealApplicationThickness> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the ideal thickness (in mm) it should be applied" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the ideal thickness (in mm) it should be applied" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/idealApplicationThickness> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/industry> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesion application and an industry it is commonly applied" ;
+    sh:class <http://w3id.org/glue/Industry> ;
+    sh:description "A relation between an adhesion application and an industry it is commonly applied" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/industry> .
+
+<http://w3id.org/glue/shapes/isMagnetic> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and a value defining whether it is magnetic or not" ;
+    sh:datatype xsd:boolean ;
+    sh:description "A relation between a substrate and a value defining whether it is magnetic or not" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/isMagnetic> ;
+    sh:pattern "true|false|0|1" .
+
+<http://w3id.org/glue/shapes/materialFamily> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the material family it is categorized as" ;
+    sh:class <http://w3id.org/glue/MaterialFamily> ;
+    sh:description "A relation between a substrate and the material family it is categorized as" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/materialFamily> .
+
+<http://w3id.org/glue/shapes/maxApplicationRelativeHumidity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and its maximum relative humidity percentage" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive type and its maximum relative humidity percentage" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxApplicationRelativeHumidity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxApplicationThickness> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the maximum thickness (in mm) it should be applied" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the maximum thickness (in mm) it should be applied" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxApplicationThickness> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxCuringTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the maximum temperature it can be cured (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive type and the maximum temperature it can be cured (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxCuringTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxDetachmentTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and the maximum temperature that can cause separation of the bonded parts (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive family and the maximum temperature that can cause separation of the bonded parts (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxDetachmentTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxDissipationFactor> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and an estimation of its maximum signal attenuation as the signal propagates down the transmission line (using dielectric loss tangent)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and an estimation of its maximum signal attenuation as the signal propagates down the transmission line (using dielectric loss tangent)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxDissipationFactor> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxElectricalConductivity> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and an estimation of its maximum reciprocal of electrical resistivity (in %IACS)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and an estimation of its maximum reciprocal of electrical resistivity (in %IACS)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxElectricalConductivity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxGapFillingCapability> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and its maximum estimated gap filling capability (in mm)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive family and its maximum estimated gap filling capability (in mm)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxGapFillingCapability> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxGlassTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the maximum estimated temperature at which the glass transition can occur (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the maximum estimated temperature at which the glass transition can occur (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxGlassTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxGravityHardener> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the maximum specific gravity or density of the hardener in g/cm³" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the maximum specific gravity or density of the hardener in g/cm³" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxGravityHardener> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxGravityResin> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the maximum specific gravity or density of the resin in g/cm³" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the maximum specific gravity or density of the resin in g/cm³" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxGravityResin> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxMeltingTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate ant the maximum estimated temperature at which it changes state from solid to liquid (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate ant the maximum estimated temperature at which it changes state from solid to liquid (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxMeltingTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxMixedViscosity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its maximum viscosity of the hardener in mPa.s" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its maximum viscosity of the hardener in mPa.s" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxMixedViscosity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxOpenTime> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and amount of time (in minutes) after its application to the substrate during which it retains its ability to adhere to and bond" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and amount of time (in minutes) after its application to the substrate during which it retains its ability to adhere to and bond" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxOpenTime> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxOperationalTemperature> a sh:PropertyShape ;
+    sh:datatype xsd:float ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxOperationalTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxPolymerTransitionTemperature> a sh:PropertyShape ;
+    rdfs:label "Maximum estimated temperature at which amorphous polymers undergo a transition from glassy to rubbery state (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "Maximum estimated temperature at which amorphous polymers undergo a transition from glassy to rubbery state (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxPolymerTransitionTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxPotLife> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the maximum period of time (in minutes) during which it maintains its workable properties after it's been mixed." ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the maximum period of time (in minutes) during which it maintains its workable properties after it's been mixed." ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxPotLife> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxResistanceTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the maximum temperature it can withstand (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the maximum temperature it can withstand (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxResistanceTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxServiceTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the maximum estimated temperature at which it can be used in a load-bearing component without oxidation (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the maximum estimated temperature at which it can be used in a load-bearing component without oxidation (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxServiceTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxShearStrength> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and its maximum estimated shear strength (in N/mm^2)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive type and its maximum estimated shear strength (in N/mm^2)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxShearStrength> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxSpecificHeatCapacity> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the maximum estimated amount of heat that must be added to one unit of its mass to cause an increase of one unit of temperature (in J/kg°C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the maximum estimated amount of heat that must be added to one unit of its mass to cause an increase of one unit of temperature (in J/kg°C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxSpecificHeatCapacity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxStorageTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its maximum recommended storage temperature in °C" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its maximum recommended storage temperature in °C" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxStorageTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxSubstrateCost> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the maximum estimated cost to acquire a kilo of it in euros." ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the maximum estimated cost to acquire a kilo of it in euros." ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxSubstrateCost> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxThermalExpansionCoefficient> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and an estimation of the maximum tendency of its matter to increase in length area, or volume in response to an increase in temperature (in μstrain/°C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and an estimation of the maximum tendency of its matter to increase in length area, or volume in response to an increase in temperature (in μstrain/°C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxThermalExpansionCoefficient> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxToughness> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the maximum estimation of its ability to absorb energy and plastically deform without fracturing (in kJ/m^2)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the maximum estimation of its ability to absorb energy and plastically deform without fracturing (in kJ/m^2)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxToughness> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxViscosityHardener> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its maximum viscosity of the hardener in mPa.s" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its maximum viscosity of the hardener in mPa.s" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxViscosityHardener> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxViscosityResin> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its maximum viscosity of the resin in mPa.s" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its maximum viscosity of the resin in mPa.s" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxViscosityResin> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxWaterAbsorption> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and a maximum estimation of its ability to absorb water when immersed in it measured in percentage of water it absorbs in 24 hours" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and a maximum estimation of its ability to absorb water when immersed in it measured in percentage of water it absorbs in 24 hours" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxWaterAbsorption> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/maxWaterVaporTransmission> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and a maximum estimation of the passage of water vapor through it (in g*mm/m^2*day)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and a maximum estimation of the passage of water vapor through it (in g*mm/m^2*day)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxWaterVaporTransmission> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/mechanicalDetachability> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and its relative ability to be detached mechanically" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive family and its relative ability to be detached mechanically" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/mechanicalDetachability> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/minApplicationRelativeHumidity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and its minimum relative humidity percentage" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive type and its minimum relative humidity percentage" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minApplicationRelativeHumidity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minApplicationThickness> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the minimum thickness (in mm) it should be applied." ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the minimum thickness (in mm) it should be applied." ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minApplicationThickness> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minCuringTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the minimum temperature it can be cured (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive type and the minimum temperature it can be cured (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minCuringTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minDetachmentTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and the minimum temperature that can cause separation of the bonded parts (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive family and the minimum temperature that can cause separation of the bonded parts (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minDetachmentTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minDissipationFactor> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and an estimation of its minimum signal attenuation as the signal propagates down the transmission line (using dielectric loss tangent)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and an estimation of its minimum signal attenuation as the signal propagates down the transmission line (using dielectric loss tangent)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minDissipationFactor> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minElectricalConductivity> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and an estimation of its minimum reciprocal of electrical resistivity (in %IACS)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and an estimation of its minimum reciprocal of electrical resistivity (in %IACS)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minElectricalConductivity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minGapFillingCapability> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and its minimum estimated gap filling capability (in mm)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive family and its minimum estimated gap filling capability (in mm)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minGapFillingCapability> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minGlassTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the minimum estimated temperature at which the glass transition can occur (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the minimum estimated temperature at which the glass transition can occur (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minGlassTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minGravityHardener> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the minimum specific gravity or density of the hardener in g/cm³" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the minimum specific gravity or density of the hardener in g/cm³" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minGravityHardener> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minGravityResin> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the minimum specific gravity or density of the resin in g/cm³" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the minimum specific gravity or density of the resin in g/cm³" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minGravityResin> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minMeltingTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate ant the minimum estimated temperature at which it changes state from solid to liquid (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate ant the minimum estimated temperature at which it changes state from solid to liquid (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minMeltingTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minMixedViscosity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its minimum viscosity of the hardener in mPa.s" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its minimum viscosity of the hardener in mPa.s" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minMixedViscosity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minOperationalTemperature> a sh:PropertyShape ;
+    sh:datatype xsd:float ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minOperationalTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minPolymerTransitionTemperature> a sh:PropertyShape ;
+    rdfs:label "Minimum estimated temperature at which amorphous polymers undergo a transition from glassy to rubbery state (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "Minimum estimated temperature at which amorphous polymers undergo a transition from glassy to rubbery state (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minPolymerTransitionTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minPotLife> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the minimum estimate of the period of time (in minutes) during which it maintains its workable properties after it's been mixed." ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the minimum estimate of the period of time (in minutes) during which it maintains its workable properties after it's been mixed." ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minPotLife> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minResistanceTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the minimum temperature it can withstand (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the minimum temperature it can withstand (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minResistanceTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minServiceTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the minimum estimated temperature at which it can be used in a load-bearing component without oxidation (in °C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the minimum estimated temperature at which it can be used in a load-bearing component without oxidation (in °C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minServiceTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minShearStrength> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and its minimum estimated shear strength (N/mm^2)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive type and its minimum estimated shear strength (N/mm^2)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minShearStrength> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minSpecificHeatCapacity> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the minimum estimated amount of heat that must be added to one unit of its mass to cause an increase of one unit of temperature (in J/kg°C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the minimum estimated amount of heat that must be added to one unit of its mass to cause an increase of one unit of temperature (in J/kg°C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minSpecificHeatCapacity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minStorageTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its minimum recommended storage temperature in °C" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its minimum recommended storage temperature in °C" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minStorageTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minSubstrateCost> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the minimum estimated cost to acquire a kilo of it in euros" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the minimum estimated cost to acquire a kilo of it in euros" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minSubstrateCost> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minThermalExpansionCoefficient> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and an estimation of the minimum tendency of its matter to increase in length area, or volume in response to an increase in temperature (in μstrain/°C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and an estimation of the minimum tendency of its matter to increase in length area, or volume in response to an increase in temperature (in μstrain/°C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minThermalExpansionCoefficient> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minToughness> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the minimum estimation of its ability to absorb energy and plastically deform without fracturing (in kJ/m^2)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the minimum estimation of its ability to absorb energy and plastically deform without fracturing (in kJ/m^2)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minToughness> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minViscosityHardener> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its minimum viscosity of the hardener in mPa.s" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its minimum viscosity of the hardener in mPa.s" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minViscosityHardener> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minViscosityResin> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its minimum viscosity of the resin in mPa.s" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its minimum viscosity of the resin in mPa.s" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minViscosityResin> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minWaterAbsorption> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and a minimum estimation of its ability to absorb water when immersed in it measured in percentage of water it absorbs in 24 hours" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and a minimum estimation of its ability to absorb water when immersed in it measured in percentage of water it absorbs in 24 hours" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minWaterAbsorption> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minWaterVaporTransmission> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and a minimum estimation of the passage of water vapor through it (in g*mm/m^2*day)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and a minimum estimation of the passage of water vapor through it (in g*mm/m^2*day)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minWaterVaporTransmission> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/peelResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the peel resistance of its bonds (in N/mm)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the peel resistance of its bonds (in N/mm)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/peelResistance> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/polymerType> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and its polymer type" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive type and its polymer type" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/polymerType> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/resinHardenerRatio> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its ratio between the volume of resin over the volume of hardener which should be mixed" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its ratio between the volume of resin over the volume of hardener which should be mixed" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/resinHardenerRatio> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/resistantToSolvent> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and a solvent it is resistant to" ;
+    sh:class <http://w3id.org/glue/Solvent> ;
+    sh:description "A relation between an adhesive and a solvent it is resistant to" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://w3id.org/glue/resistantToSolvent> .
+
+<http://w3id.org/glue/shapes/sealingQuality> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and its relative effectiveness in preventing the passage of air, moisture, dust or other substances through a bonded joint" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive family and its relative effectiveness in preventing the passage of air, moisture, dust or other substances through a bonded joint" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/sealingQuality> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/shearStrengthDegree> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type and the degree of its shear strength, classified as low, medium or high" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive type and the degree of its shear strength, classified as low, medium or high" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/shearStrengthDegree> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/shelfLife> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its maximum recommended time it can be stored (in months)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its maximum recommended time it can be stored (in months)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/shelfLife> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/substrateMaxElongation> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the its maximum ductility. It is expressed as a percentage, and it is the maximum ratio of change in axial length with the application of a tensile force to the original length of the specimen" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the its maximum ductility. It is expressed as a percentage, and it is the maximum ratio of change in axial length with the application of a tensile force to the original length of the specimen" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/substrateMaxElongation> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/substrateMaxYoungModulus> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the maximum estimated tensile or compressive stiffness when the force is applied lengthwise (in GPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the maximum estimated tensile or compressive stiffness when the force is applied lengthwise (in GPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/substrateMaxYoungModulus> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/substrateMinElongation> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the its minimum ductility. It is expressed as a percentage, and it is the minimum ratio of change in axial length with the application of a tensile force to the original length of the specimen" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the its minimum ductility. It is expressed as a percentage, and it is the minimum ratio of change in axial length with the application of a tensile force to the original length of the specimen" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/substrateMinElongation> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/substrateMinYoungModulus> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the minimum estimated tensile or compressive stiffness when the force is applied lengthwise (in GPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the minimum estimated tensile or compressive stiffness when the force is applied lengthwise (in GPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/substrateMinYoungModulus> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/substrateTensileStrengthLowerBound> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the lower bound of the maximum amount of stress it can withstand while being stretched or pulled before breaking (in MPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the lower bound of the maximum amount of stress it can withstand while being stretched or pulled before breaking (in MPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/substrateTensileStrengthLowerBound> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/substrateTensileStrengthUpperBound> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and the upper bound of the maximum amount of stress it can withstand while being stretched or pulled before breaking (in MPa)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between a substrate and the upper bound of the maximum amount of stress it can withstand while being stretched or pulled before breaking (in MPa)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/substrateTensileStrengthUpperBound> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/transparency> a sh:PropertyShape ;
+    rdfs:label "A relation between a substrate and a its quality of allowing light to pass through so that objects behind can be distinctly seen" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between a substrate and a its quality of allowing light to pass through so that objects behind can be distinctly seen" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/transparency> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/vibrationsDamping> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive family and its relative ability to absorve vibrational energy" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive family and its relative ability to absorve vibrational energy" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/vibrationsDamping> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/viscosityTemperatureValidity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and the temperature validity of its viscosity in °C" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and the temperature validity of its viscosity in °C" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/viscosityTemperatureValidity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/youngModulus> a sh:PropertyShape ;
+    sh:datatype xsd:float ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/youngModulus> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/adhesiveMaxElongation> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive and its max elongation percentage" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive and its max elongation percentage" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/adhesiveMaxElongation> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/environmentalResistance> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive type or a substrate and its relative ability to withstand environmental conditions" ;
+    sh:datatype xsd:string ;
+    sh:description "A relation between an adhesive type or a substrate and its relative ability to withstand environmental conditions" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/environmentalResistance> ;
+    sh:pattern ".*" .
+
+<http://w3id.org/glue/shapes/maxApplicationTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive  or a type of adhesives and the maximum temperature (in °C) it should be applied" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive  or a type of adhesives and the maximum temperature (in °C) it should be applied" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/maxApplicationTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/minApplicationTemperature> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive  or a type of adhesives and the minimum temperature (in °C) it should be applied" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive  or a type of adhesives and the minimum temperature (in °C) it should be applied" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/minApplicationTemperature> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<http://w3id.org/glue/shapes/thermalConductivity> a sh:PropertyShape ;
+    rdfs:label "A relation between an adhesive or a substrate and an estimation of its ability to conduct heat (in W/m.°C)" ;
+    sh:datatype xsd:float ;
+    sh:description "A relation between an adhesive or a substrate and an estimation of its ability to conduct heat (in W/m.°C)" ;
+    sh:nodeKind sh:Literal ;
+    sh:path <http://w3id.org/glue/thermalConductivity> ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
