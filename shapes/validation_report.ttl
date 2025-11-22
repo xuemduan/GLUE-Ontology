@@ -1,0 +1,438 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Polyurethane-elastomer/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Tesa%2061126> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/DP6310NS> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Polyurethane-thermoset> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/SI%20Wapex%20660> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/1C%20Epoxy/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/1C%20Polyurethane/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/1C%20Silicons/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Tesa%2051026> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Tesa%208490> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/SikaPower477R> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/VHB%20tape%204952P> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Clarocit%20powder> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/MMA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Jowat%20690> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Solvent-based%20Adhesives/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/MMA/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Megapox%20> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/DP8407NS> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/MMA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Parketkit> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/PU-Hotmelt/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/VHB%20tape%20110GF> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/UV%20Epoxides/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Anaerobic/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/schilderskit> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/MMA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Polyurethane-thermoset/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/DP190> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Phenolic%20Resin/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Plastisols/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/DP410> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Silicons/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Contact%20Adhesives/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Tesa%2050575> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/SPE%201539> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/1C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Hotmelt/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Adekit%20A%20140%20BK> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Tesa%20HFF%208401> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Araldite%202018> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Polyurethane-elastomer> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/VHB%20tape%20GPH-060GF> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Araldite%202011> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Cooltherm%20TC-2002> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/MMA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Dispersion%20Adhesives/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Decoraters%20Caulk> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/MMA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Clarocit%20liquid> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/MMA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/DP105> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/MS%20Polymers/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/DP760> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/ACXplus%207074%20HR> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/PSA> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/Cyanoacrylate/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Adekit%20A%20280%2F400%20BK> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Polyurethane-thermoset> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Betaseal%208000-1F> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/1C%20Polyurethane> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/DP609> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Polyurethane-thermoset> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive_type/UV%20Acrylates/adhesion_quality/glass> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/MaterialFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesionQualityMaterialFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesionQualityMaterialFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/material_family/glass> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://w3id.org/fm_adhesive_kg/adhesive/Loctite%20EA%203423> ;
+            sh:resultMessage "Value does not have class <http://w3id.org/glue/AdhesiveFamily>" ;
+            sh:resultPath <http://w3id.org/glue/adhesiveFamily> ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape <http://w3id.org/glue/shapes/adhesiveFamily> ;
+            sh:value <http://w3id.org/fm_adhesive_kg/adhesive_type/2C%20Epoxy> ] .
+
